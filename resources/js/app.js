@@ -53,6 +53,10 @@ import DialogFullScreen from './Components/DialogFullScreen'
 Vue.component('dialog-full-screen',DialogFullScreen)
 // import ActionButtonsResource from './Components/ActionButtonsResource'
 // Vue.component('action-buttons-resource',ActionButtonsResource)
+import ModalQueryBuilder from './Components/ModalQueryBuilder'
+Vue.component('modal-query-builder',ModalQueryBuilder)
+import VueQueryBuilder from './Components/QueryBuilder/VueQueryBuilder'
+Vue.component('vue-query-builder',VueQueryBuilder)
 
 new Vue({
     vuetify: new Vuetify({

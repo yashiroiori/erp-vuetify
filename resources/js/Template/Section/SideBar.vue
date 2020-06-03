@@ -1,7 +1,7 @@
 <template>
     <v-navigation-drawer v-model="drawer" :clipped="$vuetify.breakpoint.lgAndUp" app>
         <v-list dense>
-            <v-list-item key="admin.dashboard" link :href="route('admin.dashboard')">
+            <v-list-item key="admin.dashboard" link @click="$inertia.visit(route('admin.dashboard'))">
                 <v-list-item-action>
                     <v-icon>mdi-home</v-icon>
                 </v-list-item-action>
@@ -11,7 +11,7 @@
             </v-list-item>
             <template v-for="module in modules">
                 <v-subheader>{{module.name}}</v-subheader>
-                <v-list-item v-for="children in module.children" :key="`module_${children.id}`" link :href="route(children.slug+'.index')">
+                <v-list-item v-for="children in module.children" :key="`module_${children.id}`" link @click="$inertia.visit(route(children.slug+'.index'))">
                     <v-list-item-action>
                         <v-icon>{{children.icon}}</v-icon>
                     </v-list-item-action>

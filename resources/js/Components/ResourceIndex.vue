@@ -34,9 +34,11 @@
                     </template>
                     <span>Agregar</span>
                 </v-tooltip>
+                <modal-query-builder :query.sync="query" :rules="modelData.rules" :page.sync="searchData.page" v-bind:filter="filter" :resource="modelData.resource" />
             </template>
         </v-toolbar>
         <v-card style="border-radius: 0px;">
+            <!--
             <v-expansion-panels>
                 <v-expansion-panel>
                     <v-expansion-panel-header>Filtros</v-expansion-panel-header>
@@ -63,7 +65,7 @@
                     </v-expansion-panel-content>
                 </v-expansion-panel>
             </v-expansion-panels>
-            
+            -->
             <v-data-table
                     v-model="selected"
                     :loading="loading"
@@ -182,13 +184,17 @@
 
 <script>
 
-import qs from 'qs';
+import pickBy from 'lodash/pickBy'
+import ModalQueryBuilder from './ModalQueryBuilder'
 
 export default {
     props: {
         items: Object,
         filters: Object,
         modelData: Object,
+    },
+    components: {
+        'modal-query-builder': ModalQueryBuilder,
     },
     data () {
         return {
@@ -213,9 +219,21 @@ export default {
                 name: '',
             },
             loading_action: false,
+            query: {},
+            searchData: {
+                per_page: this.filters != undefined && this.filters.per_page ? this.filters.per_page : 15,
+                sort: this.filters != undefined && this.filters.sort ? this.filters.sort : this.sortDefault,
+                page: this.filters != undefined && this.filters.page ? this.filters.page : 1,
+            },
         }
     },
     methods: {
+        filter(){
+            // this.selectedRows = []
+            this.searchData.query = this.query
+            let query = pickBy(this.searchData)
+            this.$inertia.replace(route(this.modelData.resource+'.index', Object.keys(query).length ? query : { remember: 'forget' }))
+        },
         confirmDeleteSelected(){
             this.dialogDeleteSelected = true
         },
