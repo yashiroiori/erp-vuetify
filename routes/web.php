@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::prefix('admin')->middleware('web')->group(function() {
     Route::middleware('auth','verified')->group(function() {
-        Route::get('/', 'DashboardController');
+        Route::get('/', 'DashboardController')->name('admin.dashboard');
         Route::get('dashboard', 'DashboardController')->name('admin.dashboard');
     });
     /**
