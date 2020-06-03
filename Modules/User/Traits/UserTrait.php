@@ -19,6 +19,7 @@ trait UserTrait
 
     public function __construct()
     {
+        $this->middleware('remember')->only('index');
         Inertia::share([
             'userModelData' => User::modelData(),
         ]);
@@ -33,11 +34,26 @@ trait UserTrait
     {
         $this->authorize('index', User::class);
 
+        $sort = 'name';
+        if($request->has('sort')){
+            $sort = $request->get('sort');
+        }
+        $sortBy = 'asc';
+        if($sort[0] == '-'){
+            $sort = substr($sort, 1);
+            $sortBy = 'desc';
+        }
         return Inertia::render('Module/User/UserIndex',[
             'breadcrumbs' => Breadcrumbs::generate(),
-            'users' => User::where('id','<>',auth()->user()->id)->withTrashed()->paginate($request->get('per_page') ?? 15)->appends(request()->query()),
+            'users' => User::filter($request)->where('id','<>',auth()->user()->id)->orderBy($sort,$sortBy)->paginate($request->get('per_page')),
             'roles' => Role::get()->pluck('name')->toArray(),
         ]);
+
+        // return Inertia::render('Module/User/UserIndex',[
+        //     'breadcrumbs' => Breadcrumbs::generate(),
+        //     'users' => User::where('id','<>',auth()->user()->id)->withTrashed()->paginate($request->get('per_page') ?? 15)->appends(request()->query()),
+        //     'roles' => Role::get()->pluck('name')->toArray(),
+        // ]);
     }
 
     /**

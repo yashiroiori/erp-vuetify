@@ -22,6 +22,7 @@
         "nwidart/laravel-modules": "^7.1",
         "poisa/settings": "^0.1.13",
         "predis/predis": "^1.1",
+        "reinink/remember-query-strings": "^0.1.0",
         "spatie/laravel-medialibrary": "^7.19",
         "spatie/laravel-permission": "^3.13",
         "spatie/laravel-sluggable": "^2.2",

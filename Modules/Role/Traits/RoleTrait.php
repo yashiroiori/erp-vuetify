@@ -68,9 +68,18 @@ trait RoleTrait
                 $modulesPermission[] = $moduleTmp;
             }
         }
+        $sort = 'name';
+        if($request->has('sort')){
+            $sort = $request->get('sort');
+        }
+        $sortBy = 'asc';
+        if($sort[0] == '-'){
+            $sort = substr($sort, 1);
+            $sortBy = 'desc';
+        }
         return Inertia::render('Module/Role/RoleIndex',[
             'breadcrumbs' => Breadcrumbs::generate(),
-            'roles' => Role::withTrashed()->paginate($request->get('per_page') ?? 15)->appends(request()->query()),
+            'roles' => Role::filter($request)->where('id','<>',auth()->user()->id)->orderBy($sort,$sortBy)->paginate($request->get('per_page')),
             'users' => User::active()->get()->map(function($user){
                 return (array)[
                     'value' => $user->id,

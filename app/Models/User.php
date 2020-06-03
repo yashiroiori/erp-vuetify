@@ -14,6 +14,8 @@ use App\Notifications\VerifyEmailNotification;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Notifications\UserSendEmailRecoverNotification;
 
+use App\Traits\QueryBuilderParserTrait;
+
 // Events
 use App\Events\User\UserCreatedEvent;
 use App\Events\User\UserDeletedEvent;
@@ -23,7 +25,7 @@ use App\Events\User\UserRestoredEvent;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
-    use Notifiable, SoftDeletes, HasRoles, UserMenuTrait, StatusModelTrait, CreatedUpdatedAgoModelTrait;
+    use Notifiable, SoftDeletes, HasRoles, UserMenuTrait, StatusModelTrait, CreatedUpdatedAgoModelTrait, QueryBuilderParserTrait;
 
     public $incrementing = false;
 

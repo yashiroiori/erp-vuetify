@@ -7,6 +7,7 @@ use App\Traits\StatusModelTrait;
 use App\Traits\CreatedUpdatedAgoModelTrait;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
+use App\Traits\QueryBuilderParserTrait;
 // Events
 use App\Events\Role\RoleCreatedEvent;
 use App\Events\Role\RoleDeletedEvent;
@@ -16,7 +17,7 @@ use App\Events\Role\RoleRestoredEvent;
 
 class Role extends \Spatie\Permission\Models\Role
 {
-	use SoftDeletes, CreatedUpdatedAgoModelTrait, StatusModelTrait;
+	use SoftDeletes, CreatedUpdatedAgoModelTrait, StatusModelTrait, QueryBuilderParserTrait;
 
     public $incrementing = false;
 
