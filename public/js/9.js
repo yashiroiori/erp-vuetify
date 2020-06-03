@@ -1,16 +1,16 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[9],{
 
-/***/ "./Modules/User/Resources/assets/js/Pages/UserCreateModal.vue":
+/***/ "./Modules/Role/Resources/assets/js/Pages/RoleCreateModal.vue":
 /*!********************************************************************!*\
-  !*** ./Modules/User/Resources/assets/js/Pages/UserCreateModal.vue ***!
+  !*** ./Modules/Role/Resources/assets/js/Pages/RoleCreateModal.vue ***!
   \********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _UserCreateModal_vue_vue_type_template_id_08314e89___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UserCreateModal.vue?vue&type=template&id=08314e89& */ "./Modules/User/Resources/assets/js/Pages/UserCreateModal.vue?vue&type=template&id=08314e89&");
-/* harmony import */ var _UserCreateModal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./UserCreateModal.vue?vue&type=script&lang=js& */ "./Modules/User/Resources/assets/js/Pages/UserCreateModal.vue?vue&type=script&lang=js&");
+/* harmony import */ var _RoleCreateModal_vue_vue_type_template_id_175a8fe9___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./RoleCreateModal.vue?vue&type=template&id=175a8fe9& */ "./Modules/Role/Resources/assets/js/Pages/RoleCreateModal.vue?vue&type=template&id=175a8fe9&");
+/* harmony import */ var _RoleCreateModal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RoleCreateModal.vue?vue&type=script&lang=js& */ "./Modules/Role/Resources/assets/js/Pages/RoleCreateModal.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -20,9 +20,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _UserCreateModal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _UserCreateModal_vue_vue_type_template_id_08314e89___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _UserCreateModal_vue_vue_type_template_id_08314e89___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _RoleCreateModal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _RoleCreateModal_vue_vue_type_template_id_175a8fe9___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _RoleCreateModal_vue_vue_type_template_id_175a8fe9___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -32,46 +32,46 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "Modules/User/Resources/assets/js/Pages/UserCreateModal.vue"
+component.options.__file = "Modules/Role/Resources/assets/js/Pages/RoleCreateModal.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./Modules/User/Resources/assets/js/Pages/UserCreateModal.vue?vue&type=script&lang=js&":
+/***/ "./Modules/Role/Resources/assets/js/Pages/RoleCreateModal.vue?vue&type=script&lang=js&":
 /*!*********************************************************************************************!*\
-  !*** ./Modules/User/Resources/assets/js/Pages/UserCreateModal.vue?vue&type=script&lang=js& ***!
+  !*** ./Modules/Role/Resources/assets/js/Pages/RoleCreateModal.vue?vue&type=script&lang=js& ***!
   \*********************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_UserCreateModal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./UserCreateModal.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./Modules/User/Resources/assets/js/Pages/UserCreateModal.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_UserCreateModal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RoleCreateModal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./RoleCreateModal.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./Modules/Role/Resources/assets/js/Pages/RoleCreateModal.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RoleCreateModal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./Modules/User/Resources/assets/js/Pages/UserCreateModal.vue?vue&type=template&id=08314e89&":
+/***/ "./Modules/Role/Resources/assets/js/Pages/RoleCreateModal.vue?vue&type=template&id=175a8fe9&":
 /*!***************************************************************************************************!*\
-  !*** ./Modules/User/Resources/assets/js/Pages/UserCreateModal.vue?vue&type=template&id=08314e89& ***!
+  !*** ./Modules/Role/Resources/assets/js/Pages/RoleCreateModal.vue?vue&type=template&id=175a8fe9& ***!
   \***************************************************************************************************/
-/*! no static exports found */
+/*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UserCreateModal_vue_vue_type_template_id_08314e89___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./UserCreateModal.vue?vue&type=template&id=08314e89& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./Modules/User/Resources/assets/js/Pages/UserCreateModal.vue?vue&type=template&id=08314e89&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UserCreateModal_vue_vue_type_template_id_08314e89___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RoleCreateModal_vue_vue_type_template_id_175a8fe9___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./RoleCreateModal.vue?vue&type=template&id=175a8fe9& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./Modules/Role/Resources/assets/js/Pages/RoleCreateModal.vue?vue&type=template&id=175a8fe9&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RoleCreateModal_vue_vue_type_template_id_175a8fe9___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UserCreateModal_vue_vue_type_template_id_08314e89___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RoleCreateModal_vue_vue_type_template_id_175a8fe9___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./Modules/User/Resources/assets/js/Pages/UserCreateModal.vue?vue&type=script&lang=js&":
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./Modules/Role/Resources/assets/js/Pages/RoleCreateModal.vue?vue&type=script&lang=js&":
 /*!*****************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./Modules/User/Resources/assets/js/Pages/UserCreateModal.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./Modules/Role/Resources/assets/js/Pages/RoleCreateModal.vue?vue&type=script&lang=js& ***!
   \*****************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -120,19 +120,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
-    roles: Array
+    users: Array,
+    modulesPermission: Array
+  },
+  data: function data() {
+    return {
+      roles: []
+    };
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./Modules/User/Resources/assets/js/Pages/UserCreateModal.vue?vue&type=template&id=08314e89&":
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./Modules/Role/Resources/assets/js/Pages/RoleCreateModal.vue?vue&type=template&id=175a8fe9&":
 /*!*********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./Modules/User/Resources/assets/js/Pages/UserCreateModal.vue?vue&type=template&id=08314e89& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./Modules/Role/Resources/assets/js/Pages/RoleCreateModal.vue?vue&type=template&id=175a8fe9& ***!
   \*********************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -147,9 +151,9 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("dialog-full-screen", {
     attrs: {
-      title: "Nuevo Usuario",
-      "title-edit": "Editar Usuario",
-      resource: "user",
+      title: "Nuevo Role",
+      "title-edit": "Editar Role",
+      resource: "role",
       items: {}
     },
     scopedSlots: _vm._u([
@@ -159,7 +163,7 @@ var render = function() {
           return [
             _c("v-text-field", {
               attrs: {
-                label: "Nombre(s)",
+                label: "Nombre",
                 filled: "",
                 counter: "",
                 "error-messages":
@@ -176,75 +180,63 @@ var render = function() {
               }
             }),
             _vm._v(" "),
-            _c("v-text-field", {
-              attrs: {
-                label: "Apellido(s)",
-                filled: "",
-                counter: "",
-                "error-messages":
-                  _vm.$page.errors.last_name != undefined
-                    ? _vm.$page.errors.last_name[0]
-                    : ""
-              },
-              model: {
-                value: data.form.last_name,
-                callback: function($$v) {
-                  _vm.$set(data.form, "last_name", $$v)
-                },
-                expression: "data.form.last_name"
-              }
-            }),
-            _vm._v(" "),
-            _c("v-text-field", {
-              attrs: {
-                label: "Correo electrónico",
-                filled: "",
-                counter: "",
-                "error-messages":
-                  _vm.$page.errors.email != undefined
-                    ? _vm.$page.errors.email[0]
-                    : ""
-              },
-              model: {
-                value: data.form.email,
-                callback: function($$v) {
-                  _vm.$set(data.form, "email", $$v)
-                },
-                expression: "data.form.email"
-              }
-            }),
-            _vm._v(" "),
             _c("v-select", {
               attrs: {
-                items: _vm.roles,
-                label: "Roles asignados",
+                items: _vm.users,
+                label: "Usuarios asignados",
                 filled: "",
                 chips: "",
                 multiple: "",
                 clearable: ""
               },
               model: {
-                value: data.form.roles,
+                value: data.form.users,
                 callback: function($$v) {
-                  _vm.$set(data.form, "roles", $$v)
+                  _vm.$set(data.form, "users", $$v)
                 },
-                expression: "data.form.roles"
+                expression: "data.form.users"
               }
             }),
             _vm._v(" "),
-            _c("v-checkbox", {
-              staticClass: "mt-0",
+            _c("h3", [_vm._v("Permisos")]),
+            _vm._v(" "),
+            _c("v-treeview", {
               attrs: {
-                label: "Enviar correo para reseteo de contraseña",
-                type: "checkbox",
-                color: "info"
+                selectable: "",
+                dense: "",
+                hoverable: "",
+                "open-all": data.open_all,
+                items: _vm.modulesPermission
               },
+              scopedSlots: _vm._u(
+                [
+                  {
+                    key: "prepend",
+                    fn: function(ref) {
+                      var item = ref.item
+                      return [
+                        item.children && item.icon
+                          ? _c("v-icon", {
+                              domProps: { textContent: _vm._s("" + item.icon) }
+                            })
+                          : !item.children && item.icon
+                          ? _c("v-icon", {
+                              domProps: { textContent: _vm._s("" + item.icon) }
+                            })
+                          : _vm._e()
+                      ]
+                    }
+                  }
+                ],
+                null,
+                true
+              ),
               model: {
-                value: data.form.send_recovery_email,
+                value: data.form.permission,
                 callback: function($$v) {
-                  _vm.$set(data.form, "send_recovery_email", $$v)
+                  _vm.$set(data.form, "permission", $$v)
                 },
-                expression: "data.form.send_recovery_email"
+                expression: "data.form.permission"
               }
             })
           ]
